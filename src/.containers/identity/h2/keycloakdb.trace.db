@@ -1,0 +1,60 @@
+2024-10-27 14:01:06.241042Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVOKED_TOKEN" not found (this database is empty); SQL statement:
+delete from REVOKED_TOKEN rte1_0 where rte1_0.EXPIRE<? [42104-230]
+2024-10-27 14:01:06.286678Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM" not found (this database is empty); SQL statement:
+select distinct re1_0.EVENTS_EXPIRATION from REALM re1_0 where re1_0.EVENTS_EXPIRATION>0 [42104-230]
+2024-10-27 14:01:06.551355Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENT_INITIAL_ACCESS" not found (this database is empty); SQL statement:
+delete from CLIENT_INITIAL_ACCESS ciae1_0 where (ciae1_0.EXPIRATION>0 and (ciae1_0.TIMESTAMP+ciae1_0.EXPIRATION)<?) or ciae1_0.REMAINING_COUNT=0 [42104-230]
+2024-10-27 14:01:06.584784Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM" not found (this database is empty); SQL statement:
+select re1_0.ID from REALM re1_0 [42104-230]
+2024-10-27 14:01:06.681728Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM_ATTRIBUTE" not found (this database is empty); SQL statement:
+select rae1_0.NAME,rae1_0.REALM_ID,rae1_0.VALUE from REALM_ATTRIBUTE rae1_0 where rae1_0.NAME=? and character_length(rae1_0.VALUE)>0 [42104-230]
+2024-10-27 14:16:06.240490Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVOKED_TOKEN" not found (this database is empty); SQL statement:
+delete from REVOKED_TOKEN rte1_0 where rte1_0.EXPIRE<? [42104-230]
+2024-10-27 14:16:06.271744Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM" not found (this database is empty); SQL statement:
+select distinct re1_0.EVENTS_EXPIRATION from REALM re1_0 where re1_0.EVENTS_EXPIRATION>0 [42104-230]
+2024-10-27 14:16:06.297432Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENT_INITIAL_ACCESS" not found (this database is empty); SQL statement:
+delete from CLIENT_INITIAL_ACCESS ciae1_0 where (ciae1_0.EXPIRATION>0 and (ciae1_0.TIMESTAMP+ciae1_0.EXPIRATION)<?) or ciae1_0.REMAINING_COUNT=0 [42104-230]
+2024-10-27 14:16:06.560304Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM" not found (this database is empty); SQL statement:
+select re1_0.ID from REALM re1_0 [42104-230]
+2024-10-27 14:16:06.591265Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM_ATTRIBUTE" not found (this database is empty); SQL statement:
+select rae1_0.NAME,rae1_0.REALM_ID,rae1_0.VALUE from REALM_ATTRIBUTE rae1_0 where rae1_0.NAME=? and character_length(rae1_0.VALUE)>0 [42104-230]
+2024-10-27 14:31:06.228007Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVOKED_TOKEN" not found (this database is empty); SQL statement:
+delete from REVOKED_TOKEN rte1_0 where rte1_0.EXPIRE<? [42104-230]
+2024-10-27 14:31:06.273653Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM" not found (this database is empty); SQL statement:
+select distinct re1_0.EVENTS_EXPIRATION from REALM re1_0 where re1_0.EVENTS_EXPIRATION>0 [42104-230]
+2024-10-27 14:31:06.297258Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENT_INITIAL_ACCESS" not found (this database is empty); SQL statement:
+delete from CLIENT_INITIAL_ACCESS ciae1_0 where (ciae1_0.EXPIRATION>0 and (ciae1_0.TIMESTAMP+ciae1_0.EXPIRATION)<?) or ciae1_0.REMAINING_COUNT=0 [42104-230]
+2024-10-27 14:31:06.561430Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM" not found (this database is empty); SQL statement:
+select re1_0.ID from REALM re1_0 [42104-230]
+2024-10-27 14:31:06.592596Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM_ATTRIBUTE" not found (this database is empty); SQL statement:
+select rae1_0.NAME,rae1_0.REALM_ID,rae1_0.VALUE from REALM_ATTRIBUTE rae1_0 where rae1_0.NAME=? and character_length(rae1_0.VALUE)>0 [42104-230]
+2024-10-27 14:46:06.219681Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REVOKED_TOKEN" not found (this database is empty); SQL statement:
+delete from REVOKED_TOKEN rte1_0 where rte1_0.EXPIRE<? [42104-230]
+2024-10-27 14:46:06.272815Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM" not found (this database is empty); SQL statement:
+select distinct re1_0.EVENTS_EXPIRATION from REALM re1_0 where re1_0.EVENTS_EXPIRATION>0 [42104-230]
+2024-10-27 14:46:06.297763Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "CLIENT_INITIAL_ACCESS" not found (this database is empty); SQL statement:
+delete from CLIENT_INITIAL_ACCESS ciae1_0 where (ciae1_0.EXPIRATION>0 and (ciae1_0.TIMESTAMP+ciae1_0.EXPIRATION)<?) or ciae1_0.REMAINING_COUNT=0 [42104-230]
+2024-10-27 14:46:06.561968Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM" not found (this database is empty); SQL statement:
+select re1_0.ID from REALM re1_0 [42104-230]
+2024-10-27 14:46:06.593134Z jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REALM_ATTRIBUTE" not found (this database is empty); SQL statement:
+select rae1_0.NAME,rae1_0.REALM_ID,rae1_0.VALUE from REALM_ATTRIBUTE rae1_0 where rae1_0.NAME=? and character_length(rae1_0.VALUE)>0 [42104-230]

@@ -1,0 +1,14 @@
+﻿global using MediatR;
+global  using BlogPost.Domain.Aggregates.Root;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Microsoft.EntityFrameworkCore;
+global using System.Data;
+global using System.Linq;
+global using System.Threading.Tasks;
+global using System.Threading;
+global using System;
+global using BlogPost.Application.Repository;
+global using BlogPost.Shared.SeedWork;
+global using Microsoft.Extensions.Logging;
+global using BlogPost.Application.Projections;
+global using BlogPost.Infrastructure.Extensions;
