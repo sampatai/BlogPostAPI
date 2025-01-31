@@ -21,6 +21,7 @@ public class BlogImage : Entity
         FileName = fileName;
         Title = title;
         Url = url;
+        BlogImageGuid = Guid.NewGuid();
     }
 }
 

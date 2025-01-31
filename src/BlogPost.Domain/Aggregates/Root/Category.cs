@@ -14,6 +14,7 @@ public class Category : Entity, IAggregateRoot
         Name = name;
         UrlHandle = urlHandle;
         IsDeleted = false;
+        CategoryGuid = Guid.NewGuid();
     }
     public void Delete() => IsDeleted = true;
 

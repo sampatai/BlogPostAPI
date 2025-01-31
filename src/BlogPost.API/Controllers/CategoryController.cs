@@ -33,7 +33,7 @@ namespace BlogPost.API.Controllers
             }
         }
 
-        [HttpGet("movie/{categoryGuid:guid}")]
+        [HttpGet("{categoryGuid:guid}")]
         [ProducesResponseType(typeof(GetCategoryDTO), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<ActionResult> GetAsync(Guid categoryGuid, CancellationToken cancellationToken)
