@@ -6,28 +6,36 @@ namespace BlogPost.API.Controllers
         ILogger<CategoryController> logger) : ControllerBase
     {
 
-        [HttpPost("categories")]
+        [HttpGet("categories")]
         [ProducesResponseType(typeof(ListCategoryDTO), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        public async Task<ActionResult> FilterMovies([FromBody] TitleFilterModel filterModel, CancellationToken cancellationToken)
+        public async Task<ActionResult> FilterMovies( CancellationToken cancellationToken)
         {
             try
             {
+                //[FromBody] TitleFilterModel filterModel
+                //var query = new GetCategories.Query
+                //{
+                //    Title = filterModel.Title,
+                //    PageNumber = filterModel.PageNumber,
+                //    PageSize = filterModel.PageSize,
+                //    SortDirection = filterModel.SortDirection,
+                //    SortBy = filterModel.SortBy,
+                //};
                 var query = new GetCategories.Query
                 {
-                    Title = filterModel.Title,
-                    PageNumber = filterModel.PageNumber,
-                    PageSize = filterModel.PageSize,
-                    SortDirection = filterModel.SortDirection,
-                    SortBy = filterModel.SortBy,
+                    Title = string.Empty,
+                    PageNumber = 1,
+                    PageSize = 10,
+                    SortDirection = string.Empty,
+                    SortBy = string.Empty,
                 };
-
                 var result = await sender.Send(query, cancellationToken);
                 return Ok(result);
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, "@{filterModel}", filterModel);
+                logger.LogError(ex, "@{filterModel}", "filterModel");
                 throw;
 
             }
