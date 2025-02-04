@@ -1,7 +1,7 @@
 namespace BlogPost.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api")]
     public class CategoryController(ISender sender,
         ILogger<CategoryController> logger) : ControllerBase
     {
@@ -50,7 +50,7 @@ namespace BlogPost.API.Controllers
             }
         }
 
-        [HttpPost()]
+        [HttpPost("category")]
         [ProducesResponseType(typeof(CreateCategoryDTO), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
         public async Task<ActionResult> Create([FromBody] CreateCategoryDTO create, CancellationToken cancellationToken)
