@@ -99,7 +99,7 @@ namespace BlogPost.API.Controllers
         [HttpDelete("{categoryGuid:guid}")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        public async Task<ActionResult> CreateShowsTime(Guid categoryGuid, CancellationToken cancellationToken)
+        public async Task<ActionResult> Delete(Guid categoryGuid, CancellationToken cancellationToken)
         {
             try
             {
