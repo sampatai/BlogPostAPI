@@ -17,7 +17,8 @@ namespace BlogPost.Application.CommandQuery.Command
         {
             public Validator(IReadonlyCategoryRepository readonlyCategoryRepository)
             {
-                RuleFor(x => x.CategoryGuid).MustAsync(readonlyCategoryRepository.HasCategory)
+                RuleFor(x => x.CategoryGuid)
+                    .MustAsync(readonlyCategoryRepository.HasCategoryAsync)
                                          .WithMessage("Invalid category name");
             }
         }

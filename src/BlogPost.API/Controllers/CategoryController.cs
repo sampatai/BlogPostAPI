@@ -31,7 +31,7 @@ namespace BlogPost.API.Controllers
                     SortBy = string.Empty,
                 };
                 var result = await sender.Send(query, cancellationToken);
-                return Ok(result);
+                return Ok(result.Data);
             }
             catch (Exception ex)
             {

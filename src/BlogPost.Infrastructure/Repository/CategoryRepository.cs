@@ -96,7 +96,7 @@
             }
         }
 
-        public async Task<bool> HasCategory(Guid categoryGuid, CancellationToken cancellationToken)
+        public async Task<bool> HasCategoryAsync(Guid categoryGuid, CancellationToken cancellationToken)
         {
             try
             {

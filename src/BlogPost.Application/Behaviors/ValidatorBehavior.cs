@@ -17,8 +17,15 @@ public class ValidatorBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest
 
         _logger.LogInformation("----- Validating command {CommandType}", typeName);
 
-        var failures = _validators
-            .Select(v => v.Validate(request))
+        // Use ValidateAsync instead of Validate
+        var validationTasks = _validators
+            .Select(v => v.ValidateAsync(request, cancellationToken))
+            .ToList();
+
+        // Await all validation tasks
+        var validationResults = await Task.WhenAll(validationTasks);
+
+        var failures = validationResults
             .SelectMany(result => result.Errors)
             .Where(error => error != null)
             .ToList();

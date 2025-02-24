@@ -12,6 +12,6 @@
            TitleFilterModel titleFilterModel, CancellationToken cancellationToken
             );
         Task<Category> GetByIdAsync(Guid id, CancellationToken cancellationToken);
-         Task<bool> HasCategory(Guid CategoryGuid, CancellationToken cancellationToken);
+         Task<bool> HasCategoryAsync(Guid CategoryGuid, CancellationToken cancellationToken);
     }
 }
